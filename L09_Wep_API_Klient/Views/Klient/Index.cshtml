@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Klient app</h1>
+
+@using L09_Web_API_Klient.Models;
+
+@* @model List<Person> *@
+@model string;
+
+@using (Html.BeginForm("GetPersoner", "Klient", FormMethod.Get))
+{
+    <button name="getPersoner" value="getPersoner">Get personer</button>
+    
+    @if(Model != null)
+    {
+       @*  @foreach(Person person in @Model)   
+        {
+            <p>@person.Name</p>
+        } *@
+    }
+
+
+
+
+}
+
+@using (Html.BeginForm("GetQuote", "Klient", FormMethod.Get))
+{
+    <button name="getQuote" value="getQuote">Get Quote</button>
+
+    @if (Model != null)
+    {
+        <p>Quote: </p>
+            <p>@Model.</p>
+        
+    }
+
+
+
+
+}
+
+

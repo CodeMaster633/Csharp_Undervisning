@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* @Html.DropDownList("Countries") *@
+
+@using (Html.BeginForm("Index", "opgave1", FormMethod.Post)) {
+
+    @Html.DropDownList("Countries")
+
+    <button> Commit </button>
+
+    <br />
+    @if (ViewBag.CountryCode != null)
+    {
+        <strong>Country code: </strong>
+
+        @ViewBag.CountryCode
+    }
+}
+
+@using (Html.BeginForm("AddCountry", "opgave1", FormMethod.Post))
+{
+    <br />
+    <br />
+    @Html.Label("Country: ")
+    @Html.TextArea("Land")
+
+    <br />
+    @Html.Label("Code: ")
+    @Html.TextArea("Kode")
+    <button> Add </button>
+
+}
