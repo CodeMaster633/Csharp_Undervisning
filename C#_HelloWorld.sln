@@ -28,9 +28,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L08_Layout__mm", "L08_Layou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L08_PartialView_ViewComponent", "L08_PartialView_ViewComponent\L08_PartialView_ViewComponent.csproj", "{FA6C521B-425B-4012-8B85-5B633DF8287D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L09_WEB_API", "L09_WEB_API\L09_WEB_API.csproj", "{3A0B79AF-DE4E-4834-A16D-91BAB2EAEAB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L09_WEB_API", "L09_WEB_API\L09_WEB_API.csproj", "{3A0B79AF-DE4E-4834-A16D-91BAB2EAEAB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L09_Web_API_Klient", "L09_Wep_API_Klient\L09_Web_API_Klient.csproj", "{D8938DBD-C48F-42B2-B8A6-0E802039F02C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L09_Web_API_Klient", "L09_Wep_API_Klient\L09_Web_API_Klient.csproj", "{D8938DBD-C48F-42B2-B8A6-0E802039F02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L10_Entity_Framework", "L10_Entity_Framework\L10_Entity_Framework.csproj", "{C1BBF6AB-341A-447A-8FFE-BD1884AAED1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +88,10 @@ Global
 		{D8938DBD-C48F-42B2-B8A6-0E802039F02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8938DBD-C48F-42B2-B8A6-0E802039F02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8938DBD-C48F-42B2-B8A6-0E802039F02C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BBF6AB-341A-447A-8FFE-BD1884AAED1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BBF6AB-341A-447A-8FFE-BD1884AAED1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BBF6AB-341A-447A-8FFE-BD1884AAED1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BBF6AB-341A-447A-8FFE-BD1884AAED1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
