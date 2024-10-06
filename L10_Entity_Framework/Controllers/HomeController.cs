@@ -24,8 +24,8 @@ namespace L10_Entity_Framework.Controllers
             {
                 Console.WriteLine(bog.Name);
             }
-
-            Bog bog1 = context.Boger.Where(b => b.BogID == 1).First();
+             
+            Bog bog1 = context.Boger.Where(b => b.BogID == 1).First(); //bog
 
             bog1.Name = "dsajfk Herre";
             context.SaveChanges();
