@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="L11MAUIOpg6.MainPage">
+    
+<ContentPage.MenuBarItems>
+                <MenuBarItem Text="File">
+                    <MenuFlyoutItem Text="Open"
+                                    Clicked="MenuFlyoutItem_Clicked"/>
+                    <MenuFlyoutItem Text="Save as"
+                                    Clicked="MenuFlyoutItem_Clicked"/>
+                </MenuBarItem>
+                <MenuBarItem Text="Help">
+                    <MenuFlyoutItem Text="About"
+                            Clicked="MenuFlyoutItem_Clicked" />
+        </MenuBarItem>
+
+    </ContentPage.MenuBarItems>
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label x:Name="Lbl1" Text="Start"></Label>
+
+
+            <!--Opgave 6-->
+            <!--<toolkit:DockLayout>
+                <Button toolkit:DockLayout.DockPosition="Top" x:Name="btn1" Text="Top" HeightRequest="50" Clicked="Button_Clicked" />
+                <Button toolkit:DockLayout.DockPosition="Bottom" Text="Bottom" HeightRequest="70" Clicked="Button_Clicked" />
+                <Button toolkit:DockLayout.DockPosition="Left" Text="Left" WidthRequest="80" Clicked="Button_Clicked" />
+                <Button toolkit:DockLayout.DockPosition="Right" Text="Right" WidthRequest="90" Clicked="Button_Clicked" />
+                <Label x:Name="Lbl1" Text="Center" HeightRequest="300" HorizontalTextAlignment="Center"/>
+            </toolkit:DockLayout>-->
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

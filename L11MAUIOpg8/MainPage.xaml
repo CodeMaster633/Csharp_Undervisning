@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="L11MAUIOpg8.MainPage">
+
+    <!-- Indholdet af din side kommer her -->
+
+</ContentPage>
+
+<ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+            <!-- Virker ikke helt -->
+            <StackLayout>
+                <RadioButton  Content="North" Value="North" GroupName="Retning"/>
+                    <RadioButton  Content="South" Value="South" GroupName="Retning"/>
+                        <RadioButton  Content="East" Value="East" GroupName="Retning"/>
+                            <RadioButton  Content="West" Value="West" GroupName="Retning"/>
+                                
+                            </StackLayout>
+
+            <!-- CheckBoxes (ingen bindings endnu) -->
+            <StackLayout>
+                <CheckBox x:Name="cb1" />
+                <CheckBox x:Name="cb2" />
+                <CheckBox x:Name="cb3" />
+            </StackLayout>
+
+            <!-- Beskrivelse Label -->
+            <Label x:Name="lblBeskrivelse">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Du har valgt: " />
+                        <Span Text="{Binding Selection}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI2Opg1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Entry x:Name="Model" Text="{Binding Path=Model, Mode=TwoWay}"/>
+            <Entry x:Name="Heste" Text="{Binding Path=Heste}"/>
+            <CheckBox x:Name="Elbil" IsChecked="{Binding Path=Elbil}"/>
+
+            <Button x:Name="Submit" Clicked="Submit_Clicked" />
+            <Label x:Name="Beskrivelse"/>
+
+            <Button x:Name="Submit2" Clicked="Submit2_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

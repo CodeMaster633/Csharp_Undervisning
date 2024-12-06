@@ -1,0 +1,50 @@
+﻿@model TidsregistreringViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Tidsregistrering</h1>
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label for="medarbejderDropdown">Vælg en medarbejder:</label>
+            @Html.DropDownListFor(m => m.MedarbejderId, Model.Medarbejdere, "Vælg en medarbejder", new { @class = "form-control" })
+            <br />
+        </div>
+
+        <div class="form-group">
+            <label for="afdelingDropdown">Vælg en afdeling:</label>
+            @Html.DropDownListFor(m => m.AfdelingId, Model.Afdelinger, "Vælg en afdeling", new { @class = "form-control" })
+            <br />3
+
+        </div>
+
+        <div class="form-group">
+            <label for="sagDropdown">Vælg en sag:</label>
+            @Html.DropDownListFor(m => m.SagId, Model.Sager, "Vælg en sag", new { @class = "form-control" })
+            <br />
+        </div>
+
+        <div class="form-group">
+            <label for="startTidspunkt">Starttidspunkt:</label>
+            @Html.TextBoxFor(m => m.StartTidspunkt, new { @type = "datetime-local", @class = "form-control" })
+            <br />
+        </div>
+
+        <div class="form-group">
+            <label for="slutTidspunkt">Sluttidspunkt:</label>
+            @Html.TextBoxFor(m => m.SlutTidspunkt, new { @type = "datetime-local", @class = "form-control" })
+            <br />
+        </div>
+
+        <br />
+        <button type="submit" class="btn btn-primary">Opret Tidsregistrering</button>
+    }
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success mt-3">
+            @TempData["Success"]
+        </div>
+    }
+</div>
+
